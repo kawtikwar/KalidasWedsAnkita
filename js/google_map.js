@@ -32,7 +32,14 @@ function init() {
     
     var addresses = ['Brooklyn'];
 
-    for (var x = 0; x < addresses.length; x++) {
+    var newlatlng = new google.maps.LatLng(18.1825464,73.342639);
+    new google.maps.Marker({
+        position: newlatlng,
+        map: map,
+        icon: 'images/loc.png'
+    });
+
+    /* for (var x = 0; x < addresses.length; x++) {
         $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
             var p = data.results[0].geometry.location
             var latlng = new google.maps.LatLng(p.lat, p.lng);
@@ -43,7 +50,7 @@ function init() {
             });
 
         });
-    }
+    } */
     
 }
 google.maps.event.addDomListener(window, 'load', init);

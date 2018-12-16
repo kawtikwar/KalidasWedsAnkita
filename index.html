@@ -714,11 +714,17 @@
     var d = new Date('2018-12-29T12:41:00Z');
 
     // default example
-    simplyCountdown('.simply-countdown-one', {
-      year: d.getFullYear(),
-      month: d.getMonth() + 1,
-      day: d.getDate()
-    });
+    var d = new Date('2018-12-29T12:41:00Z');
+      simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
+        seconds: d.getSeconds(),
+        milliseconds: d.getMilliseconds(),
+        enableUtc: true
+      });
 
     //jQuery example
     $('#simply-countdown-losange').simplyCountdown({

@@ -5,7 +5,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     // var myLatlng = new google.maps.LatLng(40.71751, -73.990922);
-    var myLatlng = new google.maps.LatLng(18.6993358,77.3702946);
+    var myLatlng = new google.maps.LatLng(18.687492, 77.373326);
     // 39.399872
     // -8.224454
     
@@ -32,7 +32,7 @@ function init() {
     
     var addresses = ['Brooklyn'];
 
-    var newlatlng = new google.maps.LatLng(18.1825464,73.342639);
+    var newlatlng = new google.maps.LatLng(18.687492, 77.373326);
     new google.maps.Marker({
         position: newlatlng,
         map: map,
